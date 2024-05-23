@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 60px;
+}
+img {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  animation: rocket linear 2s infinite;
+}
+@keyframes rocket {
+  0%   {left:0px; top:0px;}
+  25%  {left:100px; top:0px;}
+  50%  {left:100px; top:100px;}
+  75%  {left:0px; top:100px;}
+  100% {left:0px; top:0px;}
+}
